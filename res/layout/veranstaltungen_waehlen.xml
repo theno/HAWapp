@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_height="fill_parent" 
+  android:layout_width="fill_parent" 
+  android:orientation="vertical" 
+  android:background="@drawable/blue">
+
+        <ExpandableListView 
+        	android:id="@+id/ExpandableListView01" 
+        	android:background="@drawable/blue" 
+        	android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="80">
+        	android:layout_weight="1">
+        </ExpandableListView>
+
+	<Button 
+		android:layout_width="fill_parent" 
+		android:text="Terminplan Erstellen" 
+		android:textSize="20dip" 
+		android:onClick="onTerminplanErstellenButton" 
+		android:id="@+id/button_selection" 
+		android:layout_weight="20" android:layout_height="80dip">
+	</Button>
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/rl_informationen" 
+	android:layout_width="fill_parent"
+	android:background="@drawable/blue" 
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+	<TextView 
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent" 
+		android:id="@+id/tv_informationen"
+		android:gravity="center_horizontal" 
+		android:textSize="20dip"
+		android:textColor="#ffffffff" 
+		android:textStyle="bold" 
+		android:text="HAWapp ver.0.1"></TextView>
+		<View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#ffffffff"
+            android:layout_marginLeft="6dip"
+            android:layout_marginRight="6dip"
+            android:layout_marginTop="6dip"
+            android:layout_marginBottom="18dip" />
+	<TextView 
+		android:id="@+id/info_text" 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:text="@string/info" 
+		android:paddingBottom="5dip"></TextView>
+	<TextView 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:text="Authoren:"
+		android:textColor="#ffffffff" 
+		android:id="@+id/tv_authoren_header"
+		android:textStyle="bold"></TextView>
+	<TextView 
+		android:layout_height="wrap_content" 
+		android:text="@string/authoren"
+		android:id="@+id/tv_authoren" 
+		android:paddingBottom="5dip" 
+		android:layout_width="fill_parent"></TextView>
+
+	<TextView 
+		android:id="@+id/TextView01"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:textColor="#ffffffff" 
+		android:text="Prof:" 
+		android:textStyle="bold"></TextView>
+	<TextView 
+		android:id="@+id/TextView02"
+		android:layout_height="wrap_content" 
+		android:text="Dr. Olaf Zukunft"
+		android:layout_width="fill_parent"></TextView>
+
+</LinearLayout>

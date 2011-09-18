@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/274/trunk/hawapp/res/layout
+END
+termin_details.xml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/269/trunk/hawapp/res/layout/termin_details.xml
+END
+veranstaltungen_waehlen.xml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/269/trunk/hawapp/res/layout/veranstaltungen_waehlen.xml
+END
+main.xml
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/269/trunk/hawapp/res/layout/main.xml
+END
+alarmclock.xml
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/231/trunk/hawapp/res/layout/alarmclock.xml
+END
+informationen.xml
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/231/trunk/hawapp/res/layout/informationen.xml
+END
+termin_list.xml
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/274/trunk/hawapp/res/layout/termin_list.xml
+END
+studiengang_waehlen.xml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/269/trunk/hawapp/res/layout/studiengang_waehlen.xml
+END
+student_prof_waehlen.xml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/274/trunk/hawapp/res/layout/student_prof_waehlen.xml
+END

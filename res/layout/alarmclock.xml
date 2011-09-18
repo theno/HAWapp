@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content" android:background="#000310"><AnalogClock android:visibility="visible" android:hand_hour="@drawable/widgethour" android:hand_minute="@drawable/widgetminute" android:layout_centerHorizontal="true" android:onClick="onAlarmClick" android:id="@+id/AnalogClock02" android:layout_height="110dip" android:layout_width="110dip" android:background="@drawable/ic_launcher110"></AnalogClock>
+<Button android:layout_height="wrap_content" android:textStyle="bold" android:id="@+id/bt_alarm_festlegen" android:layout_width="fill_parent" android:onClick="onAlarmClick" android:layout_below="@+id/AnalogClock02" android:layout_marginTop="8dip" android:text="Alarm hinzufügen"></Button>
+</RelativeLayout>

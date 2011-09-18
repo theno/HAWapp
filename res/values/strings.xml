@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, HAWmain!</string>
+    <string name="app_name">HAWapp</string>
+<string name="authoren">Mikhail Goldenzweig\nStas Rasowski\nEugen Cheskis\nZabi Safai\nJorg Hoffmeister</string>
+<string name="info">Diese App ist im Rahmen des Usability Projekts im WS2010 entstanden.</string>
+</resources>

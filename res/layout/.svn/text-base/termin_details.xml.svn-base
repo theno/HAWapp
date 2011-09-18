@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="fill_parent" 
+	android:layout_width="fill_parent"
+	android:orientation="vertical" 
+	android:background="@drawable/blue">
+
+	<ScrollView android:id="@+id/ScrollView01"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+		
+		<RelativeLayout android:id="@+id/RelativeLayout02"
+			android:layout_width="fill_parent" 
+			android:orientation="vertical" android:layout_height="fill_parent">
+			
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				android:id="@+id/VeranstaltungsName"
+				android:text="Veranstaltung">
+			</TextView>
+			<EditText android:id="@+id/Veranstaltung_et"
+				android:layout_height="wrap_content" 
+				android:layout_width="fill_parent"
+				android:layout_below="@+id/VeranstaltungsName" 
+				android:maxLines="1">
+			</EditText>
+			<TextView android:id="@+id/TextView02" 
+				android:layout_below="@+id/Veranstaltung_et"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"				 
+				android:text="Raum">
+			</TextView>
+			<TextView android:layout_below="@+id/Veranstaltung_et"
+				android:layout_toRightOf="@+id/TextView02" 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				android:id="@+id/TextView03"
+				android:layout_marginLeft="86dip" 
+				android:text="Dozent">
+			</TextView>
+			<EditText android:layout_below="@+id/TextView02"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:id="@+id/Raum_et" 
+				android:width="120dip" 
+				android:maxLines="1">
+			</EditText>
+			<TextView android:layout_width="wrap_content"
+				android:layout_below="@+id/Raum_et" 
+				android:id="@+id/TextView06"
+				android:layout_height="wrap_content" 
+				android:layout_alignLeft="@+id/Raum_et"
+				android:layout_alignRight="@+id/Raum_et" 
+				android:text="Kalender Wochen">
+			</TextView>
+			<EditText android:id="@+id/KWs_et"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/TextView06" 
+				android:layout_width="fill_parent"
+				android:maxLines="2">
+			</EditText>
+			<EditText android:layout_below="@+id/TextView02"
+				android:layout_toRightOf="@+id/Raum_et" 
+				android:layout_height="wrap_content"
+				android:id="@+id/Dozent_et" 
+				android:layout_width="fill_parent"
+				android:maxLines="1">
+			</EditText>
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				android:id="@+id/TextView01"
+				android:text="Notitz" 
+				android:layout_below="@+id/KWs_et">
+			</TextView>
+			<EditText android:layout_below="@+id/TextView01"
+				android:layout_height="wrap_content" 
+				android:id="@+id/Notitz_et"
+				android:layout_width="fill_parent" 
+				android:lines="1"
+				android:maxLines="2">
+			</EditText>
+			<TextView android:layout_below="@+id/Notitz_et"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:id="@+id/TextView05" 
+				android:layout_toRightOf="@+id/TextView04"
+				android:text="Ende" 
+				android:layout_marginLeft="128dip">
+			</TextView>
+			<TextView android:layout_below="@+id/Notitz_et"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:id="@+id/TextView04" 
+				android:text="Anfang"
+				android:layout_marginLeft="5dip">
+			</TextView>
+			<TimePicker android:id="@+id/Anfang_tp"
+				android:layout_height="wrap_content" 
+				android:layout_width="150dip"
+				android:layout_marginRight="22dip" 
+				android:layout_below="@+id/TextView04">
+			</TimePicker>
+			<Button android:layout_below="@+id/Anfang_tp"
+				android:text="Speichern"
+				android:enabled="false" 
+				android:layout_width="fill_parent"
+				android:layout_marginTop="10dip" 
+				android:layout_toRightOf="@+id/ZurueckButton"
+				android:id="@+id/SpeichernButton" 
+				android:onClick="onSpeichernButton" android:layout_height="80dip">
+			</Button>
+			<Button android:layout_below="@+id/Anfang_tp"
+				android:layout_width="wrap_content" 
+				android:text="Zurück" 
+				android:width="160dip" 
+				android:onClick="onZurueckButton"
+				android:layout_marginTop="10dip" 
+				android:id="@+id/ZurueckButton" android:layout_height="80dip">
+			</Button>
+			<TimePicker android:id="@+id/Ende_tp"
+				android:layout_toRightOf="@+id/Anfang_tp" 
+				android:layout_height="wrap_content"
+				android:layout_width="150dip" 
+				android:layout_below="@+id/TextView05"
+				android:layout_alignParentRight="true">
+			</TimePicker>
+		</RelativeLayout>
+	</ScrollView>
+</LinearLayout>

@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/281/trunk/hawapp/src/activities
+END
+HAWmain.java
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/281/trunk/hawapp/src/activities/HAWmain.java
+END
+VeranstaltungenWaehlen.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/258/trunk/hawapp/src/activities/VeranstaltungenWaehlen.java
+END
+TerminDetails.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/272/trunk/hawapp/src/activities/TerminDetails.java
+END
+ActivityRegistry.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/232/trunk/hawapp/src/activities/ActivityRegistry.java
+END
+AlarmClock.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/251/trunk/hawapp/src/activities/AlarmClock.java
+END
+InformationenAnzeigen.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/251/trunk/hawapp/src/activities/InformationenAnzeigen.java
+END
+StudentOderProfWaehlen.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/271/trunk/hawapp/src/activities/StudentOderProfWaehlen.java
+END
+StudiengangWaehlen.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/251/trunk/hawapp/src/activities/StudiengangWaehlen.java
+END
+WochenAnsicht.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/280/trunk/hawapp/src/activities/WochenAnsicht.java
+END
