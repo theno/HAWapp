@@ -360,7 +360,8 @@ public class HAWmain extends Activity {
 	}
 	
 	private boolean isNetworkAvailable() {
-	    ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(HAWmain.CONNECTIVITY_SERVICE);
+	    // Crash in Debug Mode. SocketException: Address family not supported by protocol
+		ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(HAWmain.CONNECTIVITY_SERVICE);
 	    NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
 	    return activeNetworkInfo.isConnected();
 	}
@@ -378,7 +379,7 @@ public class HAWmain extends Activity {
 
 	public void onBiblClick(View view) {
 		Log.i("HAWApp", "HAWmain -> zur Bibliothek");
-		openURI(view, "http://www.haw-hamburg.de/8338.0.html");
+		 openURI(view, "http://www.haw-hamburg.de/8338.0.html");
 	}
 
 	public boolean onCreateOptionsMenu(Menu menu) {
