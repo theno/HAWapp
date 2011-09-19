@@ -49,7 +49,7 @@ public class HAWmain extends Activity {
 	public static final int INFORMATIONEN_ID = Menu.CATEGORY_SECONDARY;
 
 	// private AnalogClock aClock;
-	//private AlertDialog alert;
+	private AlertDialog alert;
 	
 
 	/** Called when the activity is first created. */
@@ -146,7 +146,7 @@ public class HAWmain extends Activity {
 			is = openFileInput("Sem_I");
 		} catch (FileNotFoundException e) {
 			//read TimeTable from "raw"
-			//is = getResources().openRawResource(R.raw.sem);
+			is = getResources().openRawResource(R.raw.sem);
 		}
 		// if file is available for reading
 	    if (is != null) {
