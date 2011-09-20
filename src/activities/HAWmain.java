@@ -1,10 +1,7 @@
 package activities;
 
-import helper.Tools;
 import informatik.haw.app.R;
 
-import java.io.BufferedReader;
-import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
@@ -17,8 +14,6 @@ import java.net.URLConnection;
 
 import parser.E_Studiengang;
 import android.app.Activity;
-import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.net.ConnectivityManager;
@@ -86,21 +81,6 @@ public class HAWmain extends Activity {
 			String studoderprof = db.getTerminplanAttribute("studoderprof");
 			StudentOderProfWaehlen.studoderprof = studoderprof;
 		}
-		
-
-		//you can change the color of the buttons like this:
-		/*
-		Button btn_Terminplan = (Button) findViewById(R.id.btn_Terminplan);
-		btn_Terminplan.getBackground().setColorFilter(new LightingColorFilter(0xFFFFFFFF, 0xFF0000AA));		
-		Button btn_Mensa = (Button) findViewById(R.id.btn_Mensa);
-		btn_Mensa.getBackground().setColorFilter(new LightingColorFilter(0xFFFFFFFF, 0xFF0000AA));
-		Button btn_Mailer = (Button) findViewById(R.id.btn_Mailer);
-		btn_Mailer.getBackground().setColorFilter(new LightingColorFilter(0xFFFFFFFF, 0xFF0000AA));
-		Button btn_Bibliothek = (Button) findViewById(R.id.btn_Bibliothek);
-		btn_Bibliothek.getBackground().setColorFilter(new LightingColorFilter(0xFFFFFFFF, 0xFF0000AA));
-		*/
-		
-		// aClock = (AnalogClock) findViewById(R.id.AnalogClock01);
 
 		TextView text1 = (TextView) findViewById(R.id.tv_HAWapp);
 		text1.setOnClickListener(new OnClickListener() {
@@ -131,6 +111,18 @@ public class HAWmain extends Activity {
 
 		//createAllertDialog();
 		Sem_I = getActualTimeTable();
+	}
+	
+	public void onPause(Bundle savedInstanceState) {
+		
+	}
+	
+	public void onDestroy(Bundle savedInstanceState) {
+		
+	}
+	
+	public void onResume(Bundle savedInstanceState) {
+		
 	}
 	
 	/**
@@ -177,7 +169,7 @@ public class HAWmain extends Activity {
 	    }
 		return sem;
 	}
-
+	
 	private InputStream OpenHttpConnection(String urlString) 
     throws IOException
     {
@@ -361,11 +353,15 @@ public class HAWmain extends Activity {
 	
 	private boolean isNetworkAvailable() {
 	    // Crash in Debug Mode. SocketException: Address family not supported by protocol
-		ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(HAWmain.CONNECTIVITY_SERVICE);
-	    NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
-	    return activeNetworkInfo.isConnected();
-	}
-
+			 ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(HAWmain.CONNECTIVITY_SERVICE);
+			 NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
+			 if (activeNetworkInfo.isConnected()==true)
+			 {
+				 return true;
+			 }
+			 return false;
+    }
+		
 
 	public void onMensaClick(View view) {
 		Log.i("HAWApp", "HAWmain -> zur Mensa");
@@ -418,70 +414,4 @@ public class HAWmain extends Activity {
 		}
 		return false;
 	}
-
-	/*
-	private void createAllertDialog() {
-
-		AlertDialog.Builder builder = new AlertDialog.Builder(this);
-		
-		builder.setTitle("Terminplan ist leer");
-		builder.setMessage("Willst du einen erstellen?");
-		builder.setIcon(android.R.drawable.ic_dialog_alert);
-		
-		builder.setCancelable(false).setPositiveButton("Ja",
-				new DialogInterface.OnClickListener() {
-					public void onClick(DialogInterface dialog, int id) {
-						Log.i("HAWApp", "HAWmain -> TerminplanerstellenAllert -> Ja neuen Terminplan erstellen");
-						
-						Sem_I = downloadStundenplan();
-						if(Sem_I == "") {
-							dialog.cancel();							
-							
-							AlertDialog.Builder builder = new AlertDialog.Builder(HAWmain.this);
-							builder.setTitle("Internetverbindung Problem")
-								   .setMessage("Könnte auf Stundenplan nicht zugreifen..")
-								   .setIcon(android.R.drawable.ic_dialog_alert)
-							       .setCancelable(true)
-//							       .setPositiveButton("Fortfahren", new DialogInterface.OnClickListener() {
-//							           public void onClick(DialogInterface dialog, int id) {
-//							        	   Intent intent = new Intent(HAWmain.this, StudentOderProfWaehlen.class);
-//							        	   startActivity(intent);
-//							        	   dialog.cancel();
-//							           }
-//							       })
-							       .setNegativeButton("Abbrechen", new DialogInterface.OnClickListener() {
-							           public void onClick(DialogInterface dialog, int id) {
-							                dialog.cancel();
-							           }
-							       });
-							AlertDialog alert = builder.create();
-							alert.show();
-						}
-						else {
-							Intent intent = new Intent(HAWmain.this, StudentOderProfWaehlen.class);
-							startActivity(intent);
-							dialog.cancel();
-						}
-					}
-
-					private void updateVeranstaltungen() {
-						// TODO Auto-generated method stub
-						
-					}
-
-					private void updateStundenplan() {
-						// TODO Auto-generated method stub
-						
-					}
-				}).setNegativeButton("Nein",
-				new DialogInterface.OnClickListener() {
-					public void onClick(DialogInterface dialog, int id) {
-						Log.i("HAWApp", "HAWmain -> TerminplanerstellenAllert -> nein keinen Terminplan erstellen");
-						dialog.cancel();
-					}
-				});
-
-		alert = builder.create();
-	}
-	*/
 }

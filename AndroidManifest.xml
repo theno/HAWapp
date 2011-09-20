@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-      android:versionCode="1"
+<manifest android:versionCode="1"
       android:versionName="1.0" 
-      package="informatik.haw.app">
+      package="informatik.haw.app" xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"></uses-permission>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"></uses-permission><uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    
     <application android:label="@string/app_name" android:debuggable="true" android:icon="@drawable/ic_launcher">
         <activity android:label="@string/app_name" android:name="activities.HAWmain">
             <intent-filter>
