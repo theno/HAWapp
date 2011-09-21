@@ -80,20 +80,6 @@ public class HAWmain extends Activity {
 		}
 		
 
-		//you can change the color of the buttons like this:
-		/*
-		Button btn_Terminplan = (Button) findViewById(R.id.btn_Terminplan);
-		btn_Terminplan.getBackground().setColorFilter(new LightingColorFilter(0xFFFFFFFF, 0xFF0000AA));		
-		Button btn_Mensa = (Button) findViewById(R.id.btn_Mensa);
-		btn_Mensa.getBackground().setColorFilter(new LightingColorFilter(0xFFFFFFFF, 0xFF0000AA));
-		Button btn_Mailer = (Button) findViewById(R.id.btn_Mailer);
-		btn_Mailer.getBackground().setColorFilter(new LightingColorFilter(0xFFFFFFFF, 0xFF0000AA));
-		Button btn_Bibliothek = (Button) findViewById(R.id.btn_Bibliothek);
-		btn_Bibliothek.getBackground().setColorFilter(new LightingColorFilter(0xFFFFFFFF, 0xFF0000AA));
-		*/
-		
-		// aClock = (AnalogClock) findViewById(R.id.AnalogClock01);
-
 		TextView text1 = (TextView) findViewById(R.id.tv_HAWapp);
 		text1.setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {
