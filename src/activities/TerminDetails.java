@@ -1,8 +1,9 @@
 package activities;
 
+import com.haw.app.R;
+import com.haw.app.helper.Time;
 import parser.Veranstaltung;
-import informatik.haw.app.R;
-import helper.Time;
+
 import android.app.Activity;
 import android.os.Bundle;
 import android.text.Editable;

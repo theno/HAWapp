@@ -1,6 +1,5 @@
 package activities;
 
-import informatik.haw.app.R;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -8,6 +7,8 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.LinkedList;
 import java.util.List;
+
+import com.haw.app.R;
 
 import parser.Semester;
 import parser.Stundenplan;

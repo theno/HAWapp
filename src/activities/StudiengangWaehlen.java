@@ -1,9 +1,10 @@
 package activities;
 
-import informatik.haw.app.R;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import com.haw.app.R;
 
 import parser.E_Studiengang;
 import android.app.Activity;

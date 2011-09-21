@@ -1,6 +1,5 @@
 package activities;
 
-import informatik.haw.app.R;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -8,6 +7,8 @@ import java.util.Date;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
+
+import com.haw.app.R;
 
 import parser.E_Studiengang;
 import parser.Veranstaltung;

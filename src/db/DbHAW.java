@@ -3,12 +3,16 @@ package db;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.haw.app.db.DbOpenHelper;
 import parser.Veranstaltung;
+
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
+
+
 
 public class DbHAW {
 

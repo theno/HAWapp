@@ -1,6 +1,7 @@
 package activities;
 
-import informatik.haw.app.R;
+import com.haw.app.R;
+
 import android.app.Activity;
 import android.content.ComponentName;
 import android.content.Intent;

@@ -1,10 +1,5 @@
 package activities;
 
-import helper.Tools;
-import informatik.haw.app.R;
-
-import java.io.BufferedReader;
-import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
@@ -15,10 +10,10 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLConnection;
 
+import com.haw.app.R;
+
 import parser.E_Studiengang;
 import android.app.Activity;
-import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.net.ConnectivityManager;
@@ -47,9 +42,6 @@ public class HAWmain extends Activity {
 
 	public static final int VERLASSEN_ID = Menu.FIRST;
 	public static final int INFORMATIONEN_ID = Menu.CATEGORY_SECONDARY;
-
-	// private AnalogClock aClock;
-	private AlertDialog alert;
 	
 
 	/** Called when the activity is first created. */
