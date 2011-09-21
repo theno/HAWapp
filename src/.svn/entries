@@ -1,14 +1,14 @@
 10
 
 dir
-281
+284
 http://android-projekt.googlecode.com/svn/trunk/hawapp/src
 http://android-projekt.googlecode.com/svn
 
 
 
-2011-06-01T08:10:39.753758Z
-281
+2011-09-19T01:22:48.895976Z
+284
 mihahh@gmail.com
 
 
@@ -26,15 +26,6 @@ mihahh@gmail.com
 
 e112b83a-9d62-f934-a838-7971c6c16c19
 
-helper
-dir
-
-activities
-dir
-
-db
-dir
-
-parser
+com
 dir
 

@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 41
-/svn/!svn/ver/274/trunk/hawapp/res/layout
+/svn/!svn/ver/284/trunk/hawapp/res/layout
 END
 termin_details.xml
 K 25
@@ -19,7 +19,7 @@ main.xml
 K 25
 svn:wc:ra_dav:version-url
 V 50
-/svn/!svn/ver/269/trunk/hawapp/res/layout/main.xml
+/svn/!svn/ver/284/trunk/hawapp/res/layout/main.xml
 END
 alarmclock.xml
 K 25
@@ -49,5 +49,5 @@ student_prof_waehlen.xml
 K 25
 svn:wc:ra_dav:version-url
 V 66
-/svn/!svn/ver/274/trunk/hawapp/res/layout/student_prof_waehlen.xml
+/svn/!svn/ver/284/trunk/hawapp/res/layout/student_prof_waehlen.xml
 END

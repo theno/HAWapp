@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="hello">Hello World, HAWmain!</string>
     <string name="app_name">HAWapp</string>
 <string name="authoren">Mikhail Goldenzweig\nStas Rasowski\nEugen Cheskis\nZabi Safai\nJorg Hoffmeister</string>
 <string name="info">Diese App ist im Rahmen des Usability Projekts im WS2010 entstanden.</string>
+<string name="task_starting">Starting...</string>
+<string name="task_working">Working (%1$d)...</string>
+<string name="task_cancelled">Task is cancelled by user</string>
+<string name="run_task">Run</string>
+<string-array name="authoren">
+    <item>Mikhail Goldenzweig</item>
+    <item>Stas Rasowski</item>
+    <item>Eugen Cheskis</item>
+    <item>Zabi Safai</item>
+    <item>Jorg Hoffmeister</item>
+</string-array>
 </resources>
