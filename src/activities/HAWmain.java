@@ -105,7 +105,7 @@ public class HAWmain extends Activity {
 			public void onClick(View v) {
 				Log.i("HAWApp", "HAWmain -> auf Web Links geklickt");
 				Toast.makeText(HAWmain.this, "Hierrüber kannst du schnell auf die entsprechende Webseite springen",
-				Toast.LENGTH_SHORT).show();
+		 		Toast.LENGTH_SHORT).show();
 			}
 		});
 
